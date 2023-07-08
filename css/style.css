@@ -4,8 +4,32 @@
     --secondary-text-color: #fff;
 }
 
-body{
+
+p, h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img{
+    display: block;
+}
+
+body {
     font-family: 'Montserrat', sans-serif;
+    background-color:#FAFAFA;
+}
+
+.container{
+    width: 100%;
+    max-width: 1166px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -45,19 +69,43 @@ body{
 }
 
 /* ---------HEADER--------- */
-
+.header{
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
 .header-logo{
     color: var(--main-text-color);
     font-size: 18px;
     font-weight: 700;
     line-height: 1,11;
     letter-spacing: -0.03em;
+    display: flex;
+    align-items: center;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 90px;
 }
 
+.header-navigation{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+}
 .header-logo-accent{
     font-style: italic;
 }
 
+.header-menu{
+    display: flex;
+    gap: 24px;
+}
+.header-socials{
+    display: flex;
+    gap: 18px;
+} 
 .header-menu-link{
     color: var(--main-text-color);
     font-size: 14px;
@@ -73,7 +121,13 @@ body{
 /* -------HERO-------- */
 
 .hero {
-    background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(<path-to-image>), lightgray -70.319px -105.03px / 110.32% 139.265% no-repeat;
+    padding-bottom: 79px;
+}
+
+.hero-container{
+    background-color: #48433c;
+    border-radius: 30px;
+    padding: 380px 40px 40px 40px;
 }
 .hero-title {
     color:var(--secondary-text-color) ;
@@ -81,6 +135,8 @@ body{
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.03em;
+    max-width: 484px;
+    margin-bottom: 32px;
 }
 .hero-btn {
     color: var(--secondary-text-color);
@@ -89,11 +145,23 @@ body{
     font-weight: 600;
     background-color: var(--accent-color);
     cursor: pointer;
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: none;
+    margin-right: 18px;
+    
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
 }
 .hero-link {
     color: var(--secondary-text-color);
     font-size: 14px;
     font-weight: 600;
+    padding: 14px 40px;
+    border: 1px solid #FFF;
+    border-radius: 100px;
 }
 .hero-down {
     color: var(--secondary-text-color);
@@ -101,21 +169,32 @@ body{
     font-weight: 500;
     line-height: 1.29;
     letter-spacing: -0.03em;
+    display: block;
+    margin-left: auto;
 }
 
 /* --------ADVANTAGES---------- */
 
 .advantages {
     background-color: #1E1823;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .advantages-list {
+    padding-left: 18px;
+    padding-right: 18px;
+    display: flex;
+    gap: 88px;
+
 }
 .advantages-item {
+    width: calc((100% - 88px * 2) / 3); 
 }
 .advantages-subtitle {
     color: var(--secondary-text-color);
     font-size: 18px;
     font-weight: 600;
+    margin-bottom: 18px;
 
 }
 .advantages-item-text {
@@ -129,9 +208,12 @@ body{
 /* ---------TASTE--------- */
 
 .taste {
+    padding-top: 93px;
 }
 .taste-title {
-
+    max-width: 411px;
+    margin: 0 auto;
+    margin-bottom: 28px;
 }
 
 .taste-title span{
@@ -143,13 +225,24 @@ body{
     font-weight: 400;
     line-height: 1.29;
     letter-spacing: -0.02em;
+    max-width: 486px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 .taste-list {
+    display: flex;
+    gap: 19px;
 }
 
 .taste-item {
+    width: calc((100% - 57px) / 4);
+    border-radius: 15px;
+    border: 1px solid #FD9222;
+    background: #FFF;
+    padding: 28px 36px 28px 28px;
 }
 .taste-img {
+    margin-bottom: 36px;
 }
 .taste-subtitle {
     color: var(--secondary-text-color);
