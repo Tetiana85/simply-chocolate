@@ -29,7 +29,7 @@
           /></a>
           <ul class="header-menu list">
             <li class="header-menu-item">
-              <a class="header-menu-link link" href="/">Home</a>
+              <a class="header-menu-link link current" href="/">Home</a>
             </li>
             <li class="header-menu-item">
               <a class="header-menu-link link" href="#made">How it’s made?</a>
@@ -42,7 +42,7 @@
           </ul>
         </nav>
         <ul class="header-socials list">
-          <li>
+          <li class="header-socials-item">
             <a
               class="header-socials-link link"
               href=""
@@ -50,20 +50,36 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg class="header-socials-icon">
-                <use href="./images/"></use>
+              <svg class="header-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="header-socials-item">
+            <a
+              class="header-socials-link link"
+              href=""
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="header-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-socials-item">
             <a
               class="header-socials-link link"
               href=""
               aria-label="Twittwer"
               target="_blank"
               rel="noopener noreferrer"
-              >Twitter</a
             >
+              <svg class="header-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -79,7 +95,12 @@
             <div class="hero-buttons">
               <button type="button" class="hero-btn">Buy now</button>
               <a href="#made" class="hero-link link">How it’s made</a>
-              <a href="#footer" class="hero-down link">scroll down</a>
+              <a href="#footer" class="hero-down link"
+                >scroll down
+                <svg class="scroll" width="38" height="38">
+                  <use href="./images/icons.svg#icon-arr-left"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -89,6 +110,11 @@
           <h3 class="visually-hidden">Advantages</h3>
           <ul class="advantages-list list">
             <li class="advantages-item">
+              <div class="advantages-block">
+                <svg class="advantages-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-chocolate"></use>
+                </svg>
+              </div>
               <h3 class="advantages-subtitle">Unsurpassed taste</h3>
               <p class="advantages-item-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -98,6 +124,11 @@
               </p>
             </li>
             <li class="advantages-item">
+              <div class="advantages-block">
+                <svg class="advantages-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-coin"></use>
+                </svg>
+              </div>
               <h3 class="advantages-subtitle">Affordable price</h3>
               <p class="advantages-item-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -108,6 +139,11 @@
               </p>
             </li>
             <li class="advantages-item">
+              <div class="advantages-block">
+                <svg class="advantages-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
               <h3 class="advantages-subtitle">Own production</h3>
               <p class="advantages-item-text">
                 We take pride in our own production process, ensuring that every
@@ -131,7 +167,7 @@
             step of our process adds up to one exceptional taste sensation.
           </p>
           <ul class="taste-list list">
-            <li class="taste-item">
+            <li class="taste-item orange">
               <img
                 src="./images/milk-chocolate.png"
                 alt="milk chocolate"
@@ -140,6 +176,13 @@
                 class="taste-img"
               />
               <h3 class="taste-subtitle light">MILK CHOCOLATE</h3>
+              <p class="taste-cover-text">
+                Milk chocolate is a solid chocolate confectionery containing
+                cocoa, sugar and milk. It is the most consumed type of
+                chocolate. Chocolate was originally sold and consumed as a
+                beverage in pre-Columbian times. Although four-fifths of all
+                milk chocolate is sold in the United States and Europe.
+              </p>
             </li>
             <li class="taste-item">
               <img
@@ -150,8 +193,16 @@
                 class="taste-img"
               />
               <h3 class="taste-subtitle dark">Milk</h3>
+              <p class="taste-cover-text">
+                Milk is a white liquid food produced by the mammary glands of
+                mammals. It is the primary source of nutrition for young mammals
+                (including breastfed human infants) before they are able to
+                digest solid food.Early-lactation milk, which is called
+                colostrum, contains antibodies that strengthen the immune
+                system.
+              </p>
             </li>
-            <li class="taste-item">
+            <li class="taste-item black">
               <img
                 src="./images/nuts.png"
                 alt="nuts"
@@ -160,6 +211,14 @@
                 class="taste-img"
               />
               <h3 class="taste-subtitle light">nuts</h3>
+              <p class="taste-cover-text">
+                Almonds, pistachios, and walnuts are some types of nuts that
+                contain healthy nutrients. When eaten as part of a
+                nutrient-dense diet, these 9 nuts may offer benefits such as
+                reducing your risk of heart disease. They’re a good source of
+                fiber, healthy fats, and plant protein. Plus, they’re great on
+                their own.
+              </p>
             </li>
             <li class="taste-item">
               <img
@@ -170,6 +229,14 @@
                 class="taste-img"
               />
               <h3 class="taste-subtitle dark">SEMI - SWEET CHOCOLATE</h3>
+              <p class="taste-cover-text">
+                Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One
+                of the best ways to gain an understanding of this type of
+                chocolate is to compare it to a different type of chocolate.
+                Semisweet is darker than milk chocolate. In a taste comparison,
+                it has a slightly bitter taste whereas milk chocolate is sweeter
+                and more mellow.
+              </p>
             </li>
           </ul>
         </div>
@@ -232,12 +299,13 @@
           </h2>
           <ul class="loved-list list">
             <li class="loved-item">
-              <!-- <img
-                src="./images/Victoria.jpg"
+              <img
+                class="loved-img"
+                src="./images/victoria.png"
                 alt="Victoria Dobrzhanska"
                 width="80"
                 height="80"
-              /> -->
+              />
               <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
               <p class="loved-item-text">
                 I love this chocolate bar. Perfect combination of light crispy
@@ -245,12 +313,13 @@
               </p>
             </li>
             <li class="loved-item">
-              <!-- <img
-                src="./images/Nazar.jpg"
+              <img
+                class="loved-img"
+                src="./images/nazar.png"
                 alt="Nazar Babenko"
                 width="80"
                 height="80"
-              /> -->
+              />
               <h3 class="loved-subtitle">Nazar Babenko</h3>
               <p class="loved-item-text">
                 This chocolate confection is a delight! A delight! The wafer is
@@ -259,12 +328,13 @@
               </p>
             </li>
             <li class="loved-item">
-              <!-- <img
-                src="./images/Olena.jpg"
+              <img
+                class="loved-img"
+                src="./images/olena.png"
                 alt="Olena Kampusch"
                 width="80"
                 height="80"
-              /> -->
+              />
               <h3 class="loved-subtitle">Olena Kampusch</h3>
               <p class="loved-item-text">
                 Chocolate is a family favourite treat. Love the delicious smooth
