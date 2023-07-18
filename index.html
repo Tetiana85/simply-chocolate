@@ -399,9 +399,23 @@
         </button>
         <p class="modile-title">LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span></p>
         <form>
-          <input type="text" name="user-name" class="modal-input" placeholder="Enter name"> 
-          <input type="text" name="user-email" class="modal-input" placeholder="Enter email">
-          <input type="text" name="user-tel" class="modal-input" placeholder="Enter phone">
+          <div class="modal-field">
+            <label for="user-name" class="input-label">Name</label>
+            <div class="input-wrap">
+              <input type="text" name="user-name" class="modal-input" placeholder="Enter name" id="user-name">
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="/images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="input-label">Email</label> 
+            <input type="email" name="user-email" class="modal-input" placeholder="Enter email" id="user-email">
+          </div>
+          <div class="modal-field">
+            <label for="user-tel" class="input-label">Phone number</label>
+            <input type="tel" name="user-tel" class="modal-input" placeholder="Enter phone" id="user-tel">
+          </div>
           <button type="submit">Send</button>
         </form>
       </div>
