@@ -407,16 +407,30 @@
                 <use href="/images/icons.svg#icon-person"></use>
               </svg>
             </div>
-          </div>
+          </div>          
           <div class="modal-field">
-            <label for="user-email" class="input-label">Email</label> 
-            <input type="email" name="user-email" class="modal-input" placeholder="Enter email" id="user-email">
+            <label for="user-email" class="input-label">Email</label>
+            <div class="input-wrap">
+              <input type="email" name="user-email" class="modal-input" placeholder="Enter email" id="user-email">
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="/images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label for="user-tel" class="input-label">Phone number</label>
-            <input type="tel" name="user-tel" class="modal-input" placeholder="Enter phone" id="user-tel">
+            <div class="input-wrap">
+              <input type="tel" name="user-tel" class="modal-input" placeholder="Enter phone" id="user-tel">
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="/images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
-          <button type="submit">Send</button>
+          <div class="modal-field">
+            <label for="user-tel" class="input-label">Comment</label>
+            <textarea name="user-text" id="user-text" class="modal-textarea" placeholder="Enter text"></textarea>
+          </div>
+          <button type="submit" class="send-btn">Send</button>
         </form>
       </div>
     </div>
