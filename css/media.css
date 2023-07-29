@@ -1,0 +1,154 @@
+@media screen and (min-width: 375px){
+    .container{
+        max-width: 365px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container {
+            max-width: 734px;
+        }
+    
+    .made > .container{
+        max-width: 644px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.17;
+
+    }
+
+    .advantages {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+    .advantages-list{
+        gap: 32px;
+    }
+    .advantages-item{
+        width: calc((100% - 32px) / 2);
+    }
+
+    .taste {
+        padding-top: 80px;
+    }
+
+    .taste-title{
+    margin-bottom: 28px;
+    }
+
+    .taste-list{
+        gap: 32px;
+    }
+
+    .taste-item {
+        width: calc((100% - 32px) / 2);
+    }
+
+    .made {
+        padding-top: 80px;
+    }
+
+    .made-title {
+        margin-bottom: 50px;
+    }
+
+    .made-content {
+        padding: 32px;
+        max-width: 100%;
+    }
+
+    .made-head{
+        margin-bottom: 28px;
+    }
+
+    .made-list {
+        max-width: 464px;
+    }
+}
+
+
+@media screen and (min-width: 1166px) {
+    .container, .made>.container {
+        max-width: 1166px;
+    }
+    .advantages {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .advantages-list {
+        padding-left: 18px;
+        padding-right: 18px;
+        gap: 88px;
+    }
+
+    .advantages-item {
+        width: calc((100% - 88px * 2) / 3); 
+    }
+
+    .advantages-item:last-child::after{
+    display: none;
+}
+
+    .advantages-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        right: -44px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 124px;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.50);
+    }
+
+    .advantages-block {
+        margin-bottom: 19px;
+    }
+
+    .taste {
+        padding-top: 100px;
+    }
+
+    .taste-list {
+        gap: 19px;
+    }
+
+    .taste-item {
+        width: calc((100% - 57px) / 4);
+    }
+
+
+    .made {
+        padding-top: 100px;
+    }
+
+    .made-title {
+        padding-bottom: 50px;
+    }
+
+    .made-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .made-image{
+        max-width: 600px;
+        margin-bottom: 0;
+    }
+
+    .made-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .made-content {
+        max-width: 516px;
+    }
+
+    .made-list {
+        max-width: 425px;
+    }
+}
