@@ -156,8 +156,7 @@
 
     .hero-container{
         padding: 671px 40px 40px 40px;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.0), rgba(17, 17, 17, 0.40)), url(../images/chocolate_main-tab.jpg);
     }
 
     .hero-title {
@@ -318,6 +317,7 @@
     }
     .hero-container {
         padding: 381px 40px 40px 40px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.0), rgba(17, 17, 17, 0.40)), url(../images/chocolate_main.jpg);
     }
 
 }
