@@ -1,6 +1,19 @@
+@media screen and (min-width: 320px) {
+    .hero-buttons {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
 @media screen and (min-width: 375px){
     .container{
         max-width: 365px;
+    }
+
+    .hero-buttons {
+        gap: 0;
     }
 }
 
@@ -133,6 +146,35 @@
     .footer-form-btn {
         max-width: 128px;
         padding: 14px 28px;
+    }
+
+
+
+    .hero {
+        padding-bottom: 40px;
+    }
+
+    .hero-container{
+        padding: 671px 40px 40px 40px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        max-width: 484px;
+    }
+
+    .hero-btn {
+        padding: 14px 40px;
+    }
+
+    .hero-link {
+        padding: 14px 40px;
+    }
+
+    .hero-down {
+        margin-left: auto;
     }
 }
 
@@ -270,4 +312,12 @@
         max-width: 137px;
         padding: 17px 32px;
     }
+
+    .hero {
+        padding-bottom: 72px;
+    }
+    .hero-container {
+        padding: 381px 40px 40px 40px;
+    }
+
 }
