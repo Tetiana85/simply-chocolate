@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/media.css">
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a href="" class="header-logo link">
@@ -83,8 +83,78 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="svg-on-button">
+            <use
+              href="./images/icons.svg#icon-hamburger"
+            ></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="svg-on-button">
+              <use 
+                href="./images/icons.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link current" href="/">Home</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="#made">How it’s made?</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="#loved">Chocolate is loved</a>
+              </li>
+          </ul>
+        </div>
+        <ul class="mob-socials list">
+          <li class="mob-socials-item">
+            <a
+              class="mob-socials-link link"
+              href=""
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mob-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-socials-item">
+            <a
+              class="mob-socials-link link"
+              href=""
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mob-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-socials-item">
+            <a
+              class="mob-socials-link link"
+              href=""
+              aria-label="Twittwer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mob-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -170,6 +240,7 @@
           <ul class="taste-list list">
             <li class="taste-item orange">
               <img
+                srcset="./images/milk-chocolate.png 1x, ./images/milk-chocolate-2x.png 2x,"
                 src="./images/milk-chocolate.png"
                 alt="milk chocolate"
                 width="206"
@@ -187,6 +258,7 @@
             </li>
             <li class="taste-item">
               <img
+                srcset="./images/milk.png 1x, ./images/milk-2x.png 2x,"
                 src="./images/milk.png"
                 alt="milk"
                 width="206"
@@ -205,6 +277,7 @@
             </li>
             <li class="taste-item black">
               <img
+                srcset="./images/nuts.png 1x, ./images/nuts-2x.png 2x,"
                 src="./images/nuts.png"
                 alt="nuts"
                 width="206"
@@ -223,6 +296,7 @@
             </li>
             <li class="taste-item">
               <img
+                srcset="./images/semi-sweet-chocolate.png 1x, ./images/semi-sweet-chocolate-2x.png 2x,"
                 src="./images/semi-sweet-chocolate.png"
                 alt="semi-sweet-chocolate"
                 width="206"
@@ -246,13 +320,25 @@
         <div class="container">
           <h2 class="made-title section-title">hOW IT’S <span>made?</span></h2>
           <div class="made-wrap">
-            <img
+            <picture>
+              <source srcset="./images/chocolate.jpg 1x, ./images/chocolate-2x.jpg 2x"
+              media="(min-width: 1166px)"
+              />
+
+              <source srcset="./images/chocolate-tab.jpg 1x, ./images/chocolate-tab-2x.jpg 2x"
+              media="(min-width: 768px)"
+              />
+
+              <source srcset="./images/chocolate-mob.jpg 1x, ./images/chocolate-mob-2x.jpg 2x"
+              media="(min-width: 320px)"
+              />
+              <img
               src="./images/chocolate.jpg"
               alt="chocolate"
               class="made-image"
-              width="600"
-              height="400"
+              width="614"
             />
+            </picture>
             <div class="made-content">
               <p class="made-head">
                 Try our chocolates today and discover the perfect balance of
@@ -401,7 +487,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-icon" width="24" height="24">
@@ -444,7 +530,8 @@
           <button type="submit" class="send-btn">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
   </body>
