@@ -5,6 +5,9 @@
         flex-wrap: wrap;
         gap: 10px;
     }
+    .no-wrap{
+        white-space: nowrap;
+    }
 }
 
 @media screen and (min-width: 375px){
@@ -275,7 +278,7 @@
         justify-content: center;
     }
 
-    .modile-title {
+    .mobile-title {
         font-size: 24px;
     }
 

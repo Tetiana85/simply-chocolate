@@ -41,7 +41,6 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-  
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -753,7 +752,7 @@ outline: none;
     top: 50%;
     transform: translate(-50%, -50%) scaleX(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 40px;
+    padding: 20px;
     /* margin: auto; */
   }
   
@@ -793,7 +792,7 @@ outline: none;
     pointer-events: none;
   }
 
-.modile-title{
+.mobile-title{
     max-width: 298px;
     color: var(--main-text-color);
     font-size: calc(((100vw - 320px) * (10 / 55)) + 14px);
@@ -802,11 +801,11 @@ outline: none;
     line-height: 1.17;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 
 .modile-title span{
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
 
 .modal-input{
@@ -821,7 +820,7 @@ outline: none;
     outline: transparent;
 }
 
-.modal-input:focus{
+.modal-input:hover, .modal-input:focus{
     border-color: var(--accent-color);
 }
 
@@ -874,6 +873,10 @@ letter-spacing: -0.02em;
     resize: none;
 }
 
+.modal-textarea:hover, .modal-textarea:focus{
+    border-color: var(--accent-color);
+}
+
 .modal-textarea::placeholder{
     color: rgba(64, 64, 64, 0.30);
     font-size: 16px;
@@ -892,3 +895,45 @@ letter-spacing: -0.02em;
     border: none;
 }
 
+.check-text{
+    color: rgba(64, 64, 64, 0.60);
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.privacy-link{
+    color: var(--accent-color);
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+}
+
+.check-text span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(17, 17, 17, 0.14);
+    margin-right: 12px;
+    fill: transparent;
+    flex-shrink: 0;
+}
+
+.modal-check:checked +.check-text span{
+    background-color: var(--accent-color);
+    border: none;
+    fill: #fff;
+}
+
+.modal-check:focus +.check-text span {
+    border-color: var(--accent-color);
+}
+
+.privacy-link{
+    margin-left: 4px;
+}
